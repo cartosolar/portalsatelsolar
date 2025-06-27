@@ -1,84 +1,171 @@
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <title>Fl‑Satel • CNPJ 14.605.027/0001‑12</title>
-  <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; max-width:800px; }
-    header, main { margin-bottom: 30px; }
-    h1, h2 { color: #2a4d69; }
-    nav button { margin: 5px; padding: 10px 20px; border: none; background:#4b86b4; color:#fff; cursor:pointer; }
-    nav button:hover { background:#6fa3dd; }
-    .info-section { margin-bottom: 25px; border-bottom:1px solid #ccc; padding-bottom:15px; }
-    .info-section:last-child { border:none; }
-    .info-table { width:100%; border-collapse: collapse; }
-    .info-table td { padding:5px; vertical-align: top; }
-    .label { font-weight: bold; width:200px; }
-  </style>
-  <script>
-    // todos os botões levam para top (mesma página)
-    function topPage() { window.scrollTo({top: 0, behavior: 'smooth'}); }
-  </script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fl-Satel • CNPJ 14.605.027/0001-12</title>
+<style>
+  /* Reset básico */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  header {
+    background: #2a4d69;
+    color: #fff;
+    padding: 25px 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  header h1 {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  header p {
+    font-size: 1.1rem;
+    letter-spacing: 1.2px;
+  }
+  main {
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  }
+  section {
+    margin-bottom: 30px;
+  }
+  section h2 {
+    border-left: 5px solid #4b86b4;
+    padding-left: 12px;
+    color: #2a4d69;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  td.label {
+    font-weight: 700;
+    width: 180px;
+    padding: 8px 0;
+    color: #4b86b4;
+    vertical-align: top;
+  }
+  td.value {
+    padding: 8px 0;
+  }
+  ul.activities {
+    list-style-type: square;
+    padding-left: 20px;
+    color: #555;
+  }
+  ul.activities li {
+    margin-bottom: 8px;
+  }
+  footer {
+    text-align: center;
+    color: #999;
+    font-size: 0.9rem;
+    margin-top: 40px;
+  }
+  /* Ícones simples usando emoji */
+  .icon {
+    margin-right: 6px;
+    font-size: 1.1rem;
+    vertical-align: middle;
+  }
+  a.contact-link {
+    color: #2a4d69;
+    text-decoration: none;
+  }
+  a.contact-link:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 600px) {
+    body {
+      padding: 15px 10px;
+      max-width: 100%;
+    }
+    td.label {
+      width: 140px;
+    }
+  }
+</style>
 </head>
 <body>
-  <header>
-    <h1>📄 Fl‑Satel (Fernando Oliveira de SA LTDA)</h1>
-    <p><strong>CNPJ:</strong> 14.605.027/0001‑12</p>
-    <nav>
-      <button onclick="topPage()">Dados Gerais</button>
-      <button onclick="topPage()">Contato & Endereço</button>
-      <button onclick="topPage()">Atividades (CNAE)</button>
-      <button onclick="topPage()">Gestão & Sócio</button>
-    </nav>
-  </header>
 
-  <main>
-    <section class="info-section">
-      <h2>1. Dados Gerais</h2>
-      <table class="info-table">
-        <tr><td class="label">Razão Social</td><td>Fernando Oliveira de SA LTDA</td></tr>
-        <tr><td class="label">Nome Fantasia</td><td>Fl‑Satel</td></tr>
-        <tr><td class="label">Abertura</td><td>11/11/2011 (13 anos)</td></tr>
-        <tr><td class="label">Porte</td><td>Microempresa</td></tr>
-        <tr><td class="label">Natureza Jurídica</td><td>Sociedade Empresária Limitada</td></tr>
-        <tr><td class="label">Capital Social</td><td>R$ 50.000,00</td></tr>
-        <tr><td class="label">Situação</td><td>Ativa desde 11/11/2011</td></tr>
-        <tr><td class="label">Regime tributário</td><td>Simples Nacional (desde 01/01/2024)</td></tr>
-      </table>
-    </section>
+<header>
+  <h1>Fl-Satel (Fernando Oliveira de SA LTDA)</h1>
+  <p><span class="icon">🆔</span>CNPJ: <strong>14.605.027/0001-12</strong></p>
+</header>
 
-    <section class="info-section">
-      <h2>2. Contato & Localização</h2>
-      <table class="info-table">
-        <tr><td class="label">E‑mail</td><td>financeirosatel@gmail.com</td></tr>
-        <tr><td class="label">Telefone/WhatsApp</td><td>(47) 99993‑0786</td></tr>
-        <tr><td class="label">Endereço</td><td>Rua 624, nº 364, Taboleiro dos Oliveiras, Itapema – SC, CEP 88220‑000</td></tr>
-      </table>
-    </section>
+<main>
+  <section>
+    <h2>📋 Dados Gerais</h2>
+    <table>
+      <tr><td class="label">Razão Social:</td><td class="value">Fernando Oliveira de SA LTDA</td></tr>
+      <tr><td class="label">Nome Fantasia:</td><td class="value">Fl-Satel</td></tr>
+      <tr><td class="label">Abertura:</td><td class="value">11/11/2011</td></tr>
+      <tr><td class="label">Porte:</td><td class="value">Microempresa</td></tr>
+      <tr><td class="label">Natureza Jurídica:</td><td class="value">Sociedade Empresária Limitada</td></tr>
+      <tr><td class="label">Capital Social:</td><td class="value">R$ 50.000,00</td></tr>
+      <tr><td class="label">Situação:</td><td class="value">Ativa</td></tr>
+      <tr><td class="label">Regime Tributário:</td><td class="value">Simples Nacional</td></tr>
+    </table>
+  </section>
 
-    <section class="info-section">
-      <h2>3. Atividades (CNAE)</h2>
-      <ul>
-        <li><strong>47.57‑1‑00</strong>: Comercio varejista especializado de peças e acessórios para eletrodomésticos e eletrônicos :contentReference[oaicite:1]{index=1}</li>
-        <li><strong>43.21‑5‑00</strong>: Instalação e manutenção elétrica :contentReference[oaicite:2]{index=2}</li>
-        <li><strong>47.42‑3‑00</strong>: Comércio varejista de material elétrico :contentReference[oaicite:3]{index=3}</li>
-        <li><strong>80.20‑0‑01</strong>: Monitoramento de sistemas de segurança eletrônico :contentReference[oaicite:4]{index=4}</li>
-        <li><strong>47.52‑1‑00</strong>: Comércio de equipamentos de telefonia/comunicação :contentReference[oaicite:5]{index=5}</li>
-        <li><strong>23.91‑5‑03</strong>: Trabalhos com pedras (mármore, granito etc.) :contentReference[oaicite:6]{index=6}</li>
-      </ul>
-    </section>
+  <section>
+    <h2>📞 Contato & Localização</h2>
+    <table>
+      <tr>
+        <td class="label">E-mail:</td>
+        <td class="value"><a href="mailto:financeirosatel@gmail.com" class="contact-link">financeirosatel@gmail.com</a></td>
+      </tr>
+      <tr>
+        <td class="label">Telefone / WhatsApp:</td>
+        <td class="value"><a href="tel:+5547999930786" class="contact-link">(47) 99993-0786</a></td>
+      </tr>
+      <tr>
+        <td class="label">Endereço:</td>
+        <td class="value">Rua 624, nº 364, Taboleiro dos Oliveiras, Itapema – SC, CEP 88220-000</td>
+      </tr>
+    </table>
+  </section>
 
-    <section class="info-section">
-      <h2>4. Gestão & Sócio</h2>
-      <table class="info-table">
-        <tr><td class="label">Sócio‑Administrador</td><td>Fernando Oliveira de SA</td></tr>
-        <tr><td class="label">Qualificação</td><td>Sócio‑Administrador</td></tr>
-      </table>
-    </section>
-  </main>
+  <section>
+    <h2>⚙️ Atividades (CNAE)</h2>
+    <ul class="activities">
+      <li><strong>47.57-1-00:</strong> Comércio varejista especializado de peças e acessórios para eletrodomésticos</li>
+      <li><strong>43.21-5-00:</strong> Instalação e manutenção elétrica</li>
+      <li><strong>47.42-3-00:</strong> Comércio varejista de material elétrico</li>
+      <li><strong>80.20-0-01:</strong> Monitoramento de sistemas de segurança eletrônicos</li>
+      <li><strong>47.52-1-00:</strong> Comércio de equipamentos de telefonia/comunicação</li>
+      <li><strong>23.91-5-03:</strong> Trabalhos com pedras (mármore, granito, etc.)</li>
+    </ul>
+  </section>
 
-  <footer style="font-size:0.9em; color:#555; margin-top:40px;">
-    <p>Dados extraídos de fontes públicas (Econodata, CNPJ Biz) até hoje.</p>
-    <p>Atualização recomendada via API (Receita Federal) para garantir informações em tempo real.</p>
-  </footer>
+  <section>
+    <h2>👔 Gestão & Sócio</h2>
+    <table>
+      <tr><td class="label">Sócio-Administrador:</td><td class="value">Fernando Oliveira de SA</td></tr>
+      <tr><td class="label">Qualificação:</td><td class="value">Sócio-Administrador</td></tr>
+    </table>
+  </section>
+</main>
+
+<footer>
+  <p>Dados públicos coletados e organizados para sua referência.</p>
+</footer>
+
 </body>
 </html>
