@@ -1,73 +1,84 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <title>Fl ‑ Satel • CNPJ 14.605.027/0001‑12</title>
+  <title>Fl‑Satel • CNPJ 14.605.027/0001‑12</title>
   <style>
-    body { font-family: sans-serif; margin: 20px; }
-    header { text-align: center; margin-bottom: 30px; }
-    nav button { margin: 5px; padding: 10px 15px; }
-    section { display: none; margin-top: 20px; }
-    section.active { display: block; }
-    .field { margin: 5px 0; }
-    .field span.label { font-weight: bold; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; max-width:800px; }
+    header, main { margin-bottom: 30px; }
+    h1, h2 { color: #2a4d69; }
+    nav button { margin: 5px; padding: 10px 20px; border: none; background:#4b86b4; color:#fff; cursor:pointer; }
+    nav button:hover { background:#6fa3dd; }
+    .info-section { margin-bottom: 25px; border-bottom:1px solid #ccc; padding-bottom:15px; }
+    .info-section:last-child { border:none; }
+    .info-table { width:100%; border-collapse: collapse; }
+    .info-table td { padding:5px; vertical-align: top; }
+    .label { font-weight: bold; width:200px; }
   </style>
   <script>
-    function showSection(id) {
-      document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-    }
-    window.addEventListener('DOMContentLoaded', () => {
-      showSection('dados');
-    });
+    // todos os botões levam para top (mesma página)
+    function topPage() { window.scrollTo({top: 0, behavior: 'smooth'}); }
   </script>
 </head>
 <body>
   <header>
-    <h1>Fl ‑ Satel (Fernando Oliveira de SA LTDA)</h1>
+    <h1>📄 Fl‑Satel (Fernando Oliveira de SA LTDA)</h1>
     <p><strong>CNPJ:</strong> 14.605.027/0001‑12</p>
+    <nav>
+      <button onclick="topPage()">Dados Gerais</button>
+      <button onclick="topPage()">Contato & Endereço</button>
+      <button onclick="topPage()">Atividades (CNAE)</button>
+      <button onclick="topPage()">Gestão & Sócio</button>
+    </nav>
   </header>
-  <nav>
-    <button onclick="showSection('dados')">Dados Gerais</button>
-    <button onclick="showSection('contato')">Contato & Localização</button>
-    <button onclick="showSection('atividades')">Atividades (CNAE)</button>
-    <button onclick="showSection('socios')">Sócios & Administração</button>
-  </nav>
 
-  <section id="dados" class="active">
-    <h2>Dados Gerais</h2>
-    <div class="field"><span class="label">Razão Social:</span> Fernando Oliveira de SA LTDA</div>
-    <div class="field"><span class="label">Nome Fantasia:</span> Fl ‑ Satel</div>
-    <div class="field"><span class="label">Abertura:</span> 11/11/2011</div>
-    <div class="field"><span class="label">Porte:</span> Microempresa</div>
-    <div class="field"><span class="label">Natureza Jurídica:</span> Sociedade Empresária Limitada</div>
-    <div class="field"><span class="label">Capital Social:</span> R$ 50.000,00</div>
-    <div class="field"><span class="label">Situação:</span> Ativa (desde 11/11/2011)</div>
-    <div class="field"><span class="label">Optante Simples:</span> Sim (desde 01/01/2024)</div>
-  </section>
+  <main>
+    <section class="info-section">
+      <h2>1. Dados Gerais</h2>
+      <table class="info-table">
+        <tr><td class="label">Razão Social</td><td>Fernando Oliveira de SA LTDA</td></tr>
+        <tr><td class="label">Nome Fantasia</td><td>Fl‑Satel</td></tr>
+        <tr><td class="label">Abertura</td><td>11/11/2011 (13 anos)</td></tr>
+        <tr><td class="label">Porte</td><td>Microempresa</td></tr>
+        <tr><td class="label">Natureza Jurídica</td><td>Sociedade Empresária Limitada</td></tr>
+        <tr><td class="label">Capital Social</td><td>R$ 50.000,00</td></tr>
+        <tr><td class="label">Situação</td><td>Ativa desde 11/11/2011</td></tr>
+        <tr><td class="label">Regime tributário</td><td>Simples Nacional (desde 01/01/2024)</td></tr>
+      </table>
+    </section>
 
-  <section id="contato">
-    <h2>Contato & Localização</h2>
-    <div class="field"><span class="label">E‑mail:</span> financeirosatel@gmail.com</div>
-    <div class="field"><span class="label">Telefone / WhatsApp:</span> (47) 99993‑0786</div>
-    <div class="field"><span class="label">Endereço:</span> Rua 624, nº 364, Taboleiro dos Oliveiras, Itapema – SC, CEP 88220‑000</div>
-  </section>
+    <section class="info-section">
+      <h2>2. Contato & Localização</h2>
+      <table class="info-table">
+        <tr><td class="label">E‑mail</td><td>financeirosatel@gmail.com</td></tr>
+        <tr><td class="label">Telefone/WhatsApp</td><td>(47) 99993‑0786</td></tr>
+        <tr><td class="label">Endereço</td><td>Rua 624, nº 364, Taboleiro dos Oliveiras, Itapema – SC, CEP 88220‑000</td></tr>
+      </table>
+    </section>
 
-  <section id="atividades">
-    <h2>Atividades (CNAE)</h2>
-    <ul>
-      <li><strong>Principal:</strong> 47.57‑1‑00 – Comércio varejista especializado de peças e acessórios para aparelhos eletroeletrônicos para uso doméstico, exceto informática e comunicação :contentReference[oaicite:1]{index=1}</li>
-      <li>43.21‑5‑00 – Instalação e manutenção elétrica :contentReference[oaicite:2]{index=2}</li>
-      <li>47.42‑3‑00 – Comércio varejista de material elétrico :contentReference[oaicite:3]{index=3}</li>
-      <li>80.20‑0‑01 – Monitoramento de sistemas de segurança eletrônico :contentReference[oaicite:4]{index=4}</li>
-      <li>47.52‑1‑00 – Comércio de equipamentos de telefonia/comunicação :contentReference[oaicite:5]{index=5}</li>
-      <li>23.91‑5‑03 – Trabalhos com pedras (mármore, granito etc.) :contentReference[oaicite:6]{index=6}</li>
-    </ul>
-  </section>
+    <section class="info-section">
+      <h2>3. Atividades (CNAE)</h2>
+      <ul>
+        <li><strong>47.57‑1‑00</strong>: Comercio varejista especializado de peças e acessórios para eletrodomésticos e eletrônicos :contentReference[oaicite:1]{index=1}</li>
+        <li><strong>43.21‑5‑00</strong>: Instalação e manutenção elétrica :contentReference[oaicite:2]{index=2}</li>
+        <li><strong>47.42‑3‑00</strong>: Comércio varejista de material elétrico :contentReference[oaicite:3]{index=3}</li>
+        <li><strong>80.20‑0‑01</strong>: Monitoramento de sistemas de segurança eletrônico :contentReference[oaicite:4]{index=4}</li>
+        <li><strong>47.52‑1‑00</strong>: Comércio de equipamentos de telefonia/comunicação :contentReference[oaicite:5]{index=5}</li>
+        <li><strong>23.91‑5‑03</strong>: Trabalhos com pedras (mármore, granito etc.) :contentReference[oaicite:6]{index=6}</li>
+      </ul>
+    </section>
 
-  <section id="socios">
-    <h2>Sócios & Administração</h2>
-    <div class="field"><span class="label">Sócio‑Administrador:</span> Fernando Oliveira de SA</div>
-    <div class="field"><span class="label">Data da última atualização:</span> ~09/10/2023 :contentReference[oaicite:7]{index=7}</div>
-  </section>
+    <section class="info-section">
+      <h2>4. Gestão & Sócio</h2>
+      <table class="info-table">
+        <tr><td class="label">Sócio‑Administrador</td><td>Fernando Oliveira de SA</td></tr>
+        <tr><td class="label">Qualificação</td><td>Sócio‑Administrador</td></tr>
+      </table>
+    </section>
+  </main>
+
+  <footer style="font-size:0.9em; color:#555; margin-top:40px;">
+    <p>Dados extraídos de fontes públicas (Econodata, CNPJ Biz) até hoje.</p>
+    <p>Atualização recomendada via API (Receita Federal) para garantir informações em tempo real.</p>
+  </footer>
 </body>
 </html>
